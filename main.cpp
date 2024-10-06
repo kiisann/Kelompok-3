@@ -5,7 +5,9 @@ using namespace std;
 
 int main(){
 int bulan, tahun;
-
+    cout << "==========================================" << endl;
+    cout << "    Selamat datang di Program Kalender    " << endl;
+    cout << "==========================================" << endl;
     cout << endl;  
     cout << "Masukkan tahun: ";
     cin >> tahun;
