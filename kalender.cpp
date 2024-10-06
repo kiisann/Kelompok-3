@@ -1,3 +1,9 @@
+#ifndef KALENDER
+#define KALENDER
+#include <iostream>
+#include "Kabisat.cpp"
+using namespace std;
+
 void Kalender(int bulan, int tahun) {
     int jumlahHari = hariDalamBulan(bulan, tahun);
     int hariAwal = cariHariAwal(bulan, tahun);
@@ -25,3 +31,5 @@ void Kalender(int bulan, int tahun) {
     }
     cout << endl;
 }
+
+#endif
