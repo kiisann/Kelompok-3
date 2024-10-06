@@ -1,3 +1,8 @@
+#ifndef KALENDER
+#define KALENDER
+#include <iostream>
+#include "Kabisat.cpp"
+using namespace std;
 bool tahunKabisat (int tahun) {
     return (tahun % 4 == 0 && tahun % 100 != 0) || (tahun % 400 == 0);
 }
@@ -37,3 +42,4 @@ int cariHariAwal(int bulan, int tahun) {
     return (hariAwal + 5) % 7;
 }
 
+#endif
