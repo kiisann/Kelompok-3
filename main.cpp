@@ -1,15 +1,15 @@
 #include <iostream>
+#include "kalender.cpp"
+#include "Kabisat.cpp"
 using namespace std;
 
 int main(){
 int bulan, tahun;
 
-  while (true){
     cout << endl;  
     cout << "Masukkan tahun: ";
     cin >> tahun;
 
-    while (true){
       cout << endl;
       cout <<"Kalender Tahun "<< tahun << endl;
       cout <<"Pilih bulan: " << endl;
@@ -29,7 +29,10 @@ int bulan, tahun;
       cout <<"\nPilihan Anda: " << endl;
       cin >> bulan;
 
-      if (bulan == 0){
-        break;
-}
+      if (bulan >= 1&& bulan <= 12){
+        Kalender(bulan,tahun);
+}else { 
+cout << "Pilihan tidak valid, silahkan coba lagi." << endl;
+      }
 return 0;
+}
