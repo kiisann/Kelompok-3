@@ -1,7 +1,6 @@
-#ifndef KALENDER
-#define KALENDER
+#ifndef KABISAT
+#define KABISAT
 #include <iostream>
-#include "Kabisat.cpp"
 using namespace std;
 
 bool tahunKabisat (int tahun) {
